@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pendaftaran Peserta</title>
+</head>
+<body>
+    <h1>Pendaftaran untuk {{ acara.judul }}</h1>
+    <form method="post">
+        {% csrf_token %}
+        Nama: <input type="text" name="nama"><br>
+        Email: <input type="email" name="email"><br>
+        <button type="submit">Daftar</button>
+    </form>
+</body>
+</html>
