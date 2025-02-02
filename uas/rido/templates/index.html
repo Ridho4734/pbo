@@ -4,6 +4,171 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daftar Acara</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #c1dfc4, #f3f4f6); /* Gradien modern */
+            color: #333;
+            line-height: 1.6;
+            padding: 0 10px;
+        }
+
+        header {
+            background: linear-gradient(45deg, #6a11cb, #2575fc); /* Gradien berwarna ungu dan biru */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 4px solid #f1f1f1;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            margin: 0 15px;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        header nav a:hover {
+            background-color: white;
+            color: #2575fc;
+        }
+
+        section {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            animation: slideIn 1.5s ease-out;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        li {
+            background: #fff;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: bounceIn 1s ease-out;
+        }
+
+        li:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        h3 {
+            font-size: 1.6rem;
+            color: #6a11cb; /* Warna ungu untuk judul acara */
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        p {
+            margin: 8px 0;
+            font-size: 1rem;
+        }
+
+        p strong {
+            color: #3498db;
+        }
+
+        a {
+            display: inline-block;
+            color: white;
+            background-color: #2575fc;
+            padding: 12px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 25px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #6a11cb;
+            transform: translateY(-5px);
+        }
+
+        footer {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes bounceIn {
+            0% {
+                transform: scale(0.9);
+                opacity: 0;
+            }
+            50% {
+                transform: scale(1.05);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -37,7 +202,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2025 Organisasi Acara Seminar dan Workshop</p>
+        <p>&copy; UAS RIDHO MASYKUR 0426008 MBD</p>
     </footer>
 </body>
 </html>
